@@ -37,10 +37,8 @@ jobs:
       uses: stefanzweifel/git-auto-commit-action@v4.16.0
       with:
         commit_message: Added or updated review dir
-    
-    quality_control:
-      steps:
-      - name: Quality Control
-        run: |
-          assert 1 == 2
-        shell: python
+
+    - name: Quality Control
+      run: |
+        assert 1 == 2
+      shell: python
