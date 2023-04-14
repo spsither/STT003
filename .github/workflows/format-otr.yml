@@ -40,5 +40,6 @@ jobs:
 
     - name: Quality Control
       run: |
+        print('test')
         assert 1 == 2
       shell: python
